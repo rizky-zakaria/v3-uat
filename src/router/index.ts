@@ -2,10 +2,16 @@ import appSetting from '@/app-setting';
 import { useAppStore } from '@/stores/index';
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
-import HomeView from '../views/index.vue';
+import HomeView from '../views/dashboard/index.vue';
+import DocumentsView from '../views/document/index.vue';
+import RequirementsView from '../views/master-data/requirements/index.vue';
+import ProjectsView from '../views/project/index.vue';
 
 const routes: RouteRecordRaw[] = [
     { path: '/', name: 'home', component: HomeView },
+    { path: '/master-data/requirements', name: 'requirements', component: RequirementsView },
+    { path: '/documents', name: 'documents', component: DocumentsView },
+    { path: '/projects', name: 'projects', component: ProjectsView },
 ];
 
 const router = createRouter({

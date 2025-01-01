@@ -57,14 +57,14 @@
                                     <vue-collapsible :isOpen="activeDropdown === 'datatables'">
                                         <ul class="sub-menu text-gray-500">
                                             <li>
-                                                <router-link to="/datatables/basic" @click="toggleMobileMenu">{{ $t('Requirements') }}</router-link>
+                                                <router-link to="/master-data/requirements" @click="toggleMobileMenu">{{ $t('Requirements') }}</router-link>
                                             </li>
                                         </ul>
                                     </vue-collapsible>
                                 </li>
 
                                 <li class="nav-item">
-                                    <router-link to="/apps/calendar" class="group" @click="toggleMobileMenu">
+                                    <router-link to="/projects" class="group" @click="toggleMobileMenu">
                                         <div class="flex items-center">
                                             <icon-menu-calendar class="group-hover:!text-primary shrink-0" />
 
@@ -75,7 +75,7 @@
                                     </router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link to="/apps/calendar" class="group" @click="toggleMobileMenu">
+                                    <router-link to="/documents" class="group" @click="toggleMobileMenu">
                                         <div class="flex items-center">
                                             <icon-menu-pages class="group-hover:!text-primary shrink-0" />
 
